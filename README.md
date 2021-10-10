@@ -29,11 +29,11 @@ gcc bison_file.tab.c -o Compiler -lfl -lm
 
 ```
 all: lex_file.l bison_file.y
-	clear
-	flex -i lex_file.l
-	bison bison_file.y
-	gcc bison_file.tab.c -o Compiler -lfl -lm
-	./Compiler
+  clear
+  flex -i lex_file.l
+  bison bison_file.y
+  gcc bison_file.tab.c -o Compiler -lfl -lm
+  ./Compiler
 ```
 
 ## Uso da linguagem
