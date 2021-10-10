@@ -102,3 +102,9 @@ write(5);
         </tr>
     </tbody>
 </table>
+
+<style>
+  p {
+   color: red;
+  }
+</style>
