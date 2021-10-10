@@ -16,23 +16,24 @@ Para executar o projeto será preciso: Flex, Bison e GCC;
 - [x] Breve documentação informado a sintaxe reconhecida pelo seu analisador
 - [x] Fornecer um arquivo de exemplo para utilização do seu analisador
 
-### Windows - Criar um arquivo <nome_arquivo>.bat com o seguinte código e executá-lo no terminal:
+### Windows - Criar um arquivo make.bat com o seguinte código e executá-lo no terminal:
 
 ```
-flex -i calc_mario.l
-bison calc_mario.y
-gcc calc_mario.tab.c -o compilador_mario -lfl -lm
-.\compilador_mario
+flex -i lex_file.l
+bison bison_file.y
+gcc bison_file.tab.c -o Compiler -lfl -lm
+.\Compiler
 ```
 
 ### Linux - Criar um arquivo makefile com o seguinte código e executá-lo no terminal:
 
 ```
-all: calc_mario.l calc_mario.y
-  flex -i calc_mario.l
-  bison calc_mario.y
-  gcc calc_mario.tab.c -o compilador_mario -lfl
-  ./compilador_mario
+all: lex_file.l bison_file.y
+	clear
+	flex -i lex_file.l
+	bison bison_file.y
+	gcc bison_file.tab.c -o Compiler -lfl -lm
+	./Compiler
 ```
 
 ## Uso da linguagem
